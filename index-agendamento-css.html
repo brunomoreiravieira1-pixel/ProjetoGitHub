@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Moreira Vieira">
+    <meta name="keywords" content="Pilates, exercício físicos, bem-estar, saúde, condicionamento físico, flexibilidade, equilíbrio, postura, força muscular">
+    <meta name="description" content="Aulas de pilates no Le Classic Pilates.">
+    <title>Le Classic Pilates</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="img/banner.png" alt="Mulher praticando pilates">
+    </header>
+
+        <nav>
+            <a class="a-menu" href="index-home-css.html">HOME</a>
+            <a class="a-menu" href="index-home-css.html#pag-beneficios">BENEFÍCIOS</a>
+            <a class="a-menu" href="index-home-css.html#pag-caracteristicas">CARACTERÍSTICAS</a>
+            <a class="a-menu" href="index-home-css.html#pag-estudio">ESTÚDIO</a>
+            <a class="a-menu" href="index-agendamento.html">AGENDAMENTOS</a>
+        </nav>
+
+        <section id="pag-agendamento">
+
+        <h1>Agendamentos</h1>
+
+        <p>Agende uma aula experimental grátis agora mesmo.</p>
+
+        <form action="" name="frm-agendar" method="get">
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="200">
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="usuario@email.com">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+
+            <label for="celular">Celular:</label>
+            <input type="tel" name="celular" id="celular" placeholder="(99) 99999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{5})-([0-9]{4})">
+
+            <div id="data-hora-aula">
+                <div>
+                    <label for="data">Data:</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div>
+                    <label for="hora">Hora</label>
+                    <input type="time" name="hora" id="hora">
+                </div>
+                <div>
+                    <label for="aulas">Aulas:</label><br>
+                    <input type="number" name="aulas" id="aulas" max="5" min="1" step="1">
+                </div>
+            </div>
+
+            <label for="nivel">Nível:</label><br>
+            <select name="nivel" id="nivel">
+                <option value="basico">Básico</option>
+                <option value="intermed">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+
+            <fieldset>
+                <legend>Gênero:</legend>
+                <input type="radio" name="genero" id="masculino" value="M">
+                <label for="masculino">Masculino</label>
+
+                <input type="radio" name="genero" id="feminino" value="F">
+                <label for="feminino">Feminino</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Atividades:</legend>
+                <input id="musc" type="checkbox" name="atividade" value="musculacao"> <label for="musc">Musculação</label>
+                <input id="pila" type="checkbox" name="atividade" value="pilates"> <label for="pila">Pilates</label>
+                <input id="yoga" type="checkbox" name="atividade" value="yoga"> <label for="yoga">Yoga</label>
+                <input id="corr" type="checkbox" name="atividade" value="corrida"> <label for="corr">Corrida</label>
+            </fieldset>
+
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="" id="msg" cols="50" rows="4"></textarea>
+
+            <div class="botoes">
+                <input type="submit" name="bt-agendar" value="AGENDAR">
+                <input type="reset" name="bt-cancelar" value="CANCELAR">
+            </div>
+
+        </form>
+        </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://brunomoreiravieira1@gmail.com" target="_blank">Bruno Moreira Vieira</a> - 2026</p>
+    </footer>
+</body>
+</html>
